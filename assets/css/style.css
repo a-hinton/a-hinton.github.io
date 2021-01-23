@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+/* variables */
+:root {
+    --gradient: linear-gradient(90deg, #FB4B4E 50%, #34D1BF 50%);
+}
+
+/* total page styling */
+/* html {
+    
+} */
+
+#body {
+    background: var(--gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #EADEDA;
+    width: 100%;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #EADEDA;
+}
+/* end total page styling */
+
+/* nav bar styling*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #fb4b4e98 50vw, #34d1bf98 50vw);
+    z-index: 10;
+}
+#nav-links {
+    width: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li a {
+    font-size: 1.25rem;
+    color: #EADEDA;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+  }
+  /* Change the link color to #34D1BF on hover */
+  li a:hover {
+    background-color: #34D1BF;
+  }
+/* end nav bar styling */
+
+
+/* landing page styling */
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+}
+    /* arrow styling */
+    #title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #EADEDA;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: .5vw;
+        grid-area: 1/1/span 5/span 5;
+        z-index: 2;
+    }
+
+    #arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 225px solid transparent;
+        border-right: 450px solid  #34D1BF;
+        border-bottom: 225px solid transparent;
+        grid-area: 2/1/span 3/span 2;
+        z-index: 1;
+    }
+
+    #arrow-right-inset {
+        width: 0;
+        height: 0;
+        border-top: 75px solid transparent;
+        border-left: 100px solid #34D1BF;
+        border-bottom: 75px solid transparent;
+        grid-area: 3/5/span 1/span 1;
+        z-index: 10;
+    }
+
+    #arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 75px solid transparent;
+        border-left: 150px solid #EADEDA;
+        border-bottom: 75px solid transparent;
+        grid-area: 3/5/span 1/span 1;
+    }
+    /* end arrow styling */
+
+#purpose-state {
+    display: flex;
+    grid-area: 5/2/span 1/span 3;
+    justify-content: center;
+    align-items: center;
+}
+
+#purpose {
+    color: #EADEDA;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/* end landing page styling */
+
+
+
+/* section-wide styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    background-color: #EADEDA;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    color: #EADEDA;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.titles {
+    position: relative;
+    padding: 1em;
+    background-color: #FB4B4E;
+}
+
+.crd-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: .5em;
+    padding: 2em;
+    background-color: #FB4B4E;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.column {
+    width: 30%;
+    margin-left: 1%;
+}
+    /* intro card styling */
+    #name {
+        color: #34D1BF;
+        font-size: 1.5rem;
+    }
+    /* end intro card styling */
+
+    /* portfolio card styling */
+    .proj-card {
+        padding: 10px;
+        min-height: 15em;
+        background-color: #EADEDA;
+        color: #FB4B4E;
+        margin-bottom: 1em;
+    }
+
+    .proj-card p, .service-card p {
+        font-size: 1rem;
+        padding: 1em;
+    }
+
+    img {
+        width: 100%;
+        height: 10em;
+        object-fit:cover;
+        object-position:left top;
+    }
+    /* end portfolio card styling */
+
+    /* Services styling */
+    .service-card {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 8em;
+        padding: 10px;
+        background-color: #EADEDA;
+        color: #FB4B4E;
+        margin-bottom: 1em;
+    }
+    /* end services styling */
+
+    /* contact styling */
+    #emph1, #emph2, #emph3 {
+        color: #34D1BF;
+        font-size: 1.5rem;
+    }
+    /* end contact styling */
+/* end section styling */
+
+/* footer styling*/
+footer {
+    width: 100%;
+    text-align: left;
+    color: #EADEDA;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 45px 50px;
+}
+
+.footer-icons {
+    float: right;
+    margin-right: 2em;
+}
+
+.footer-left {
+    float: left;
+    margin-left: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #EADEDA;
+}
+
+.footer-links p a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+/* end footer styling*/
+
+/* media queries */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 48%;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 770px) { 
+    /* header and nav media query*/
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    li a {
+        font-size: .75rem;
+        /* color: #EADEDA;
+        text-align: center; */
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+
+    /* landing page styling */
+    .landing-page {
+        height: 100vh;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px 80px;
+        grid-template-rows: 80px 80px 80px 80px 80px;
+    }
+
+    #title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #EADEDA;
+        font-weight: 700;
+        letter-spacing: .5vw;
+        grid-area: 1/1/span 5/span 5;
+    }
+
+    #arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 120px solid transparent;
+        border-right: 240px solid  #34D1BF;
+        border-bottom: 120px solid transparent;
+        grid-area: 2/1/span 3/span 2;
+        z-index: -1;
+    }
+
+    #arrow-right-inset {
+        display:none;
+    }
+
+    #arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-left: 80px solid #EADEDA;
+        border-bottom: 40px solid transparent;
+        grid-area: 3/5/span 1/span 1;
+    }
+
+    #purpose-state {
+        display: flex;
+        grid-area: 5/2/span 1/span 3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #purpose {
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* end landing page styling */
+    
+    /* content styling */
+    .content {
+        margin-top: 3em;
+    }
+    /* end content styling */
+  }
+
+@media screen and (max-width: 700px) {
+    .column {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+        /* landing page styling */
+    .landing-page {
+        height: 100vh;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+
+    #arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 75px solid transparent;
+        border-right: 150px solid  #34D1BF;
+        border-bottom: 75px solid transparent;
+        grid-area: 2/1/span 3/span 2;
+        z-index: -1;
+    }
+
+    #arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 50px solid #EADEDA;
+        border-bottom: 25px solid transparent;
+        grid-area: 3/5/span 1/span 1;
+    }
+
+    #purpose-state {
+        display: flex;
+        grid-area: 5/2/span 1/span 3;
+        justify-content: center;
+        align-items: center;
+    }
+    /* end landing page styling */
+
+    .column {
+        width: 100%;
+    }
+  }
