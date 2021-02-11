@@ -1,4 +1,4 @@
-# Alexandra Hinton (aka PNGDesign) professional web development portfolio
+# Alexandra Hinton (aka PMGDesign) professional web development portfolio
 
 Welcome, this is the professional working portfolio of Alexandra Hinton. The code and styling are created by Alexandra Hinton. 
 
